@@ -23,6 +23,8 @@
       return;
     }
 
+    window.location.href = `mailto:consulting@blobfish.icu?subject=Contact from ${name}&body=${message}`
+
     /* TODO: replace this block with your actual form endpoint (e.g. a mailto:
      * action, a POST to a server-side script, or a service like Formspree).
      * Example fetch call is left here as a starting point.
@@ -37,7 +39,7 @@
      */
 
     /* Placeholder response until a real endpoint is wired up */
-    showStatus('Thanks ' + name + ' — we will be in touch at ' + email + '.', 'ok');
+    showStatus('Thanks ' + name + ', we will be in touch at ' + email + '.', 'ok');
     form.reset();
   });
 
