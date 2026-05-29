@@ -348,3 +348,21 @@ footer .oss-note { color: var(--green-dim); }
 /* ── Utility ────────────────────────────────────────────────── */
 .mt-sm { margin-top: 0.75rem; }
 .mt-md { margin-top: 1.5rem; }
+
+/* ── Mobile ─────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  nav ul { display: none; }
+  nav .inner { justify-content: center; }
+
+  .hero-body,
+  .section-body,
+  .mission-item p,
+  .service-card p,
+  .stack-desc,
+  .model-step,
+  .model-step p,
+  .contact-lead {
+    font-size: 1.05rem;
+  }
+  .contact-note { font-size: 0.9rem; }
+}
