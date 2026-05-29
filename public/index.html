@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blobfish Consulting - Transitioning to a Post-Windows World</title>
+  <link rel="preload" href="fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -286,28 +287,23 @@
     <p class="section-label">// get in touch</p>
     <h2 class="section-title">Start the conversation</h2>
     <div class="contact-wrap">
-      <div class="contact-info">
-        <p>
-          Whether you are evaluating a migration, concerned about an upcoming hardware refresh cycle,
-          or simply want to understand your options - we are happy to have an initial
-          no-obligation conversation.
-        </p>
-        <div class="contact-line">
-          <span class="label prompt">email</span>
-          <a href="mailto:consulting@blobfish.icu">consulting@blobfish.icu</a>
-        </div>
-        <p class="mt-md" style="font-size:0.8rem; color: var(--text-muted);">
-          We do not use contact data for any purpose other than responding to your enquiry.
-          We do not use trackers, analytics or third party scripts.
-        </p>
-      </div>
-      <form class="contact-form">
-        <input type="text"  name="name"    placeholder="Your name"               autocomplete="name">
-        <input type="email" name="email"   placeholder="Email address"           autocomplete="email">
-        <input type="text"  name="org"     placeholder="Organisation (optional)"  autocomplete="organization">
-        <textarea name="message" placeholder="Tell us a bit about your current setup and what you are hoping to achieve..."></textarea>
-        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send message</button>
-      </form>
+      <p class="contact-lead">
+        Whether you are evaluating a migration, concerned about an upcoming hardware refresh
+        cycle, or simply want to understand your options - we are happy to have an initial
+        no-obligation conversation.
+      </p>
+      <a class="contact-email" href="mailto:consulting@blobfish.icu">consulting@blobfish.icu</a>
+      <p class="contact-note">
+        There is no contact form here, by design. This site is served as plain static files -
+        no backend, no database, nothing to keep running - which holds our hosting costs to
+        almost nothing and leaves nowhere for your details to be stored or leak from. Those
+        savings go back into the open-source tools we deploy. Send us an email and a real
+        person will reply.
+      </p>
+      <p class="contact-note">
+        We do not use contact data for any purpose other than responding to your enquiry.
+        We do not use trackers, analytics or third party scripts.
+      </p>
     </div>
   </div>
 </section>
@@ -326,6 +322,5 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
 </body>
 </html>
